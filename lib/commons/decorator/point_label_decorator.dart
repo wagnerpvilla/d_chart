@@ -93,7 +93,7 @@ class PointLabelDecorator {
       labelCallback: (datum) {
         OrdinalData data = datum as OrdinalData;
         bool selected = selectedO == null ? false : selectedO!(data);
-        String label = labelFormatterN == null
+        String label = labelFormatterO == null
             ? data.measure.toString()
             : labelFormatterO!(data);
         return common.PointLabelSpec(
